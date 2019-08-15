@@ -15,10 +15,10 @@ spec:
         app: voting-app-d
     spec:
       containers:
-        name: postgres-pod
-        image: postgres:9.4
-        ports:
-          - containerPort: 5432
+        - name: postgres-pod
+          image: postgres:9.4
+          ports:
+            - containerPort: 5432
   selector:
     matchLabels:
       name: postgres-pod

@@ -16,7 +16,9 @@ spec:
     spec:
       containers:
         - name: worker-container
-          image: dockersamples/examplevotingapp_worker
+          #image: dockersamples/examplevotingapp_worker
+          image: eesprit/voting-app-worker
+
   selector:
     matchLabels:
       name: worker-pod

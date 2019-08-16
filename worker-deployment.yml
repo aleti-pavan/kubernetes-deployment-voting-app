@@ -18,5 +18,6 @@ spec:
         - name: worker-container
           image: dockersamples/examplevotingapp_worker
   selector:
-    name: worker-pod
-    app: voting-app-d
+    matchLabels:
+      name: worker-pod
+      app: voting-app-d
